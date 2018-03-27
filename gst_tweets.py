@@ -82,7 +82,8 @@ class TwitterClient(object):
 
                 #Write the tweet in CSV file
                 tw = self.clean_tweet(tweet.text)
-                csvWriter.writerow([tw.encode('utf-8')])
+		if tweet.lang == "en":
+                    csvWriter.writerow([tw.encode('utf-8')])
 
                 # empty dictionary to store required params of a tweet
                 parsed_tweet = {}
