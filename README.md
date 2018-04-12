@@ -4,15 +4,19 @@ Python Script to get the GST Tweets and do sentiment analysis on it
 To Run this script we will require Python 3 and some python packages installed.
 
 1) Tweepy: Tweepy is the python client for the official Twitter API.
+    
     pip install tweepy
  
 2) TextBlob: Textblob is the python library for processing textual data.
+   
    pip install textblob
    
 3) NLTK corpora:Sample corpora used for training the dataset
+   
    python -m textblob.download_corpora
  
 4) MatPlotLib: Used to plot the analysis (We use pie chart to plot the analysis here)
+   
    python -mpip install -U matplotlib
    
 
